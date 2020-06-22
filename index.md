@@ -24,17 +24,8 @@ $(document).ready(function() {
 
 
 
-# Betacoronavirus predictions
-
-> Becker, D., Albery, G. F., Sjodin, A. R., Poisot, T., Dallas, T., Eskew, E. A., ... & Carlson, C. J. (2020). Predicting wildlife hosts of betacoronaviruses for SARS-CoV-2 sampling prioritization. bioRxiv. doi: https://doi.org/10.1101/2020.05.22.111344
-
-
-
-
 
 <body>
-
-
 
 <table id="main" class="display" style="width:100%">
   <thead>
@@ -63,8 +54,6 @@ $(document).ready(function() {
 
   </tbody>
 </table>
-
-
 
 </body>
 
