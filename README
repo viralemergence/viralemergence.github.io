@@ -12,7 +12,7 @@ Updates to the data can be ensure by submitting the following command:
 
 ```
 
-curl -o _data/predictions.csv https://raw.githubusercontent.com/viralemergence/Fresnel/master/BinaryPredictions.csv
+curl -o _data/predictions.csv https://raw.githubusercontent.com/viralemergence/Fresnel/master/BinaryWebsite.csv
 
 ```
 

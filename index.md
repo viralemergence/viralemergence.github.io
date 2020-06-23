@@ -5,41 +5,25 @@ title: Home
 
 
 
-<script>
-$(document).ready(function() {
-    $('#main').DataTable( {
-        columnDefs: [ {
-            targets: [ 0 ],
-            orderData: [ 0, 1 ]
-        }, {
-            targets: [ 1 ],
-            orderData: [ 1, 0 ]
-        }, {
-            targets: [ 4 ],
-            orderData: [ 4, 0 ]
-        } ]
-    } );
-} );
-</script>
-
-
-
 
 <body>
 
-<table id="main" class="display" style="width:100%">
+
+<table id="table" class="display"  style="width:100%">
   <thead>
   <tr>
     <th> Species </th>
-    <th> Betacov </th>
-    <th> Trait1 </th>
-    <th> Trait2 </th>
-    <th> Trait3 </th>
-    <th> Network1 </th>
-    <th> Network2 </th>
-    <th> Network3 </th>
-    <th> Network4 </th>
+    <th> Training data </th>
+    <th> New data </th>
     <th> Ensemble </th>
+    <th> Trait.1 </th>
+    <th> Trait.2 </th>
+    <th> Trait.3 </th>
+    <th> Hybrid </th>
+    <th> Network.1 </th>
+    <th> Network.2 </th>
+    <th> Network.3 </th>
+    <th> Network.4 </th>
   </tr>
   </thead>
 

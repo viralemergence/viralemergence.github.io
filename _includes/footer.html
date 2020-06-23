@@ -5,22 +5,49 @@
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.colVis.min.js"></script>
 
 
-  <!-- Load and initialize DataTables -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  <!-- css -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.dataTables.min.css">
 
 
 
 
-  <script type="text/javascript">
-      $(document).ready( function () {
-          $('#main').DataTable({
-              "pageLength": 100
-          });
-      } );
-  </script>
+
+<script>
+$(document).ready(function() {
+    $('#table').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'colvis'
+        ],
+  "columns": [
+    { "visible": true },
+    { "visible": true },
+    { "visible": true },
+    { "visible": true },
+    { "visible": false },
+    { "visible": false },
+    { "visible": false },
+    { "visible": true },
+    { "visible": false },
+    { "visible": false },
+    { "visible": false },
+    { "visible": false }
+  ]
+    } );
+} );
+
+
+</script>
+
+
 </footer>
