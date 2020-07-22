@@ -2,4 +2,4 @@ language: bash
 os: linux
 dist: xenial
 script:
-  - bash "curl -o _data/predictions.csv https://raw.githubusercontent.com/viralemergence/Fresnel/master/BinaryWebsite.csv"
+  - bash curl -o '_data/predictions.csv' 'https://raw.githubusercontent.com/viralemergence/Fresnel/master/BinaryWebsite.csv'
