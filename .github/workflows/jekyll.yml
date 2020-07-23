@@ -1,11 +1,10 @@
-name: Jekyll site CI
+name: Pull updated data
 
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,10 +13,3 @@ jobs:
     - name: Pull the most recent data
       run: |
         curl -o '_data/predictions.csv' 'https://raw.githubusercontent.com/viralemergence/Fresnel/master/BinaryWebsite.csv'
-  github-pages:
-    runs-on: ubuntu-16.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: helaili/jekyll-action@2.0.1
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
