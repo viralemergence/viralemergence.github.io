@@ -13,3 +13,7 @@ jobs:
     - name: Pull the most recent data
       run: |
         curl -o '_data/predictions.csv' 'https://raw.githubusercontent.com/viralemergence/Fresnel/master/BinaryWebsite.csv'
+    - name: Commit results
+      run: |
+        git commit _data/predictions.csv -m 'data updated' || echo "No changes to commit"
+        git push origin || echo "No changes to commit"
