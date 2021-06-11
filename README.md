@@ -1,3 +1,6 @@
+[![Pull updated data](https://github.com/viralemergence/viralemergence.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/viralemergence/viralemergence.github.io/actions/workflows/jekyll.yml)
+
+
 ## Dynamic predictions of betacov-host associations
 
 
